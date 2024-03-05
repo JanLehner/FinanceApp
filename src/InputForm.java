@@ -91,7 +91,7 @@ public class InputForm extends javax.swing.JFrame {
 
         overviewScreenBtn.setBackground(new java.awt.Color(71, 223, 156));
         overviewScreenBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        overviewScreenBtn.setText("Bericht");
+        overviewScreenBtn.setText("Überblick");
         overviewScreenBtn.setPreferredSize(new java.awt.Dimension(341, 32));
         overviewScreenBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
