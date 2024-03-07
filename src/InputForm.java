@@ -169,10 +169,12 @@ public class InputForm extends javax.swing.JFrame {
         try {
             float inputAmount = Float.parseFloat(amountTextField.getText());
             String inputCategory = categoriesDropdown.getSelectedItem().toString();
-            if (inputAmount != 0.0) {
+            if (inputAmount != 0.0 && inputAmount != 0) {
                 FileEditor.addARecord(inputAmount, inputCategory);
                 errorMsg.setVisible(false);
                 JOptionPane.showMessageDialog(this, "Ausgabe erfolgreich hinzugefügt.");
+            }else{
+                errorMsg.setVisible(true);
             }
         } catch (Exception e) {
             errorMsg.setVisible(true);
